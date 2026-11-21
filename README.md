@@ -23,7 +23,7 @@ Most modern desktop clipboard utilities bundle an entire Chromium browser (Elect
 
 **myClipClip** pairs a native **C# (.NET 8) Win32 host** with Windows' built-in **Edge WebView2 Runtime** and a **60-second idle auto-unload watchdog** — giving you a crisp Alfred-style UI and streaming Markdown AI window at a fraction of the footprint:
 
-| Metric | myClipClip v2.0 |
+| Metric | myClipClip v1.0 |
 | :--- | :--- |
 | **App Folder Size** | **3.97 MB** (`myClipClip.exe` is **3.20 MB**) |
 | **Windows Setup Installer (NSIS)** | **1.26 MB** |
