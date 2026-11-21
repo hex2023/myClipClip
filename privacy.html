@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — myClipClip</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        background: #0f1117;
+        color: #e2e8f0;
+        line-height: 1.7;
+        margin: 0;
+        padding: 40px 20px;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        background: #141822;
+        border: 1px solid #262e42;
+        border-radius: 14px;
+        padding: 36px 40px;
+      }
+      h1 { color: #ffffff; margin-top: 0; }
+      h2 { color: #a5b4fc; margin-top: 28px; font-size: 1.15rem; }
+      code { background: #1e293b; padding: 2px 6px; border-radius: 4px; color: #67e8f9; }
+      .meta { color: #94a3b8; font-size: 0.9rem; margin-bottom: 24px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Privacy Policy for myClipClip</h1>
+      <div class="meta">Effective Date: November 21, 2026 &nbsp;•&nbsp; Publisher: Kijo Kim</div>
+
+      <h2>1. Overview</h2>
+      <p>
+        <strong>myClipClip</strong> is a local-first Windows clipboard manager, snippet expander, and AI search utility.
+        We respect your privacy and do <strong>not</strong> collect, transmit, sell, or store any of your personal data,
+        clipboard history, or snippets on publisher-controlled servers.
+      </p>
+
+      <h2>2. Local Data Storage</h2>
+      <ul>
+        <li>
+          <strong>Clipboard History &amp; Snippets:</strong> All captured text, file paths, images, snippets, and app
+          preferences are stored exclusively on your local device inside <code>%APPDATA%\myClipClip\</code>.
+        </li>
+        <li>
+          <strong>Retention:</strong> Unpinned clipboard history is automatically pruned according to your configured
+          retention setting (10 days by default), and you can clear history at any time in Settings.
+        </li>
+        <li>
+          <strong>API Keys:</strong> Any third-party AI API keys you enter are encrypted locally at rest using Windows
+          Data Protection API (DPAPI) and are never shared with the publisher.
+        </li>
+      </ul>
+
+      <h2>3. Optional Third-Party AI Requests (Bring Your Own Key)</h2>
+      <ul>
+        <li>myClipClip never sends clipboard content over the network automatically.</li>
+        <li>
+          Only when you explicitly trigger <strong>AI Search</strong> and submit a prompt does the app send the selected
+          copied content and prompt directly from your device to the AI provider you selected and configured (such as
+          OpenRouter, Google Gemini, DeepSeek, Anthropic Claude, OpenAI, or a custom local/remote OpenAI-compatible
+          endpoint).
+        </li>
+        <li>Data sent to a third-party AI provider is governed by that provider's own privacy policy.</li>
+      </ul>
+
+      <h2>4. Telemetry &amp; Analytics</h2>
+      <p>myClipClip contains no analytics SDKs, advertising trackers, or background telemetry.</p>
+
+      <h2>5. Contact</h2>
+      <p>
+        For privacy questions or support, please contact <strong>Kijo Kim</strong> via the support contact listed on the
+        Microsoft Store product page.
+      </p>
+    </main>
+  </body>
+</html>
