@@ -77,7 +77,7 @@ Most modern desktop clipboard utilities bundle an entire Chromium browser (Elect
 ### Privacy & Security
 - **Local-first**: All history and snippets live locally in `%APPDATA%\myClipClip\clipclip.db` (SQLite WAL mode). Zero analytics or telemetry.
 - **Encrypted API keys**: All AI keys are encrypted at rest with **Windows DPAPI** (`ProtectedData`).
-- See [PRIVACY.md](PRIVACY.md) for the full privacy policy.
+- See [PRIVACY.md](https://hex2023.github.io/myClipClip/privacy.html) for the full privacy policy.
 
 ---
 
@@ -85,9 +85,9 @@ Most modern desktop clipboard utilities bundle an entire Chromium browser (Elect
 
 | Shortcut | Action |
 | :--- | :--- |
-| `Shift+Win+C` | Toggle Clipboard History *(configurable in Settings)* |
-| `Shift+Win+X` | Toggle Snippets View *(configurable in Settings)* |
-| `Shift+Win+A` | Open AI Search on current clipboard *(configurable in Settings)* |
+| `Ctrl+Shift+C` | Toggle Clipboard History *(configurable in Settings)* |
+| `Ctrl+Shift+S` | Toggle Snippets View *(configurable in Settings)* |
+| `Ctrl+Shift+A` | Open AI Search on current clipboard *(configurable in Settings)* |
 | `Enter` | Auto-paste selected item/snippet into previous app |
 | `Shift+Enter` | Copy selected item/snippet without auto-pasting |
 | `Tab` | Send selected history item to AI Search |
@@ -99,64 +99,3 @@ Most modern desktop clipboard utilities bundle an entire Chromium browser (Elect
 
 ---
 
-## Architecture
-
-```text
-myClipClip/
-├── src/
-│   ├── shared/                 # Shared TypeScript types, placeholders, AI provider catalog
-│   └── renderer/               # React 19 + Tailwind CSS v4 UI + WebView2 JSON-RPC bridge
-├── native/
-│   ├── MyClipClip/             # Native C# (.NET 8) WinForms + Edge WebView2 host
-│   │   ├── Services/           # SQLite (WAL), Win32 hooks/hotkeys/paste, DPAPI + SSE AI client
-│   │   └── UI/                 # WebHostForm & WindowManager (60s idle auto-unload)
-│   └── MyClipClip.Tests/       # .NET 8 xUnit tests (SQLite, DPAPI, SSE streaming, placeholders)
-├── installer/                  # Commercial-free NSIS 3 Windows Setup script
-├── packaging/msix/             # Microsoft Store MSIX manifest, tile assets & build script
-├── e2e/                        # Playwright CDP end-to-end tests driving native myClipClip.exe
-├── docs/                       # GitHub Pages privacy policy (privacy.html)
-└── store-assets/               # Microsoft Store 1920x1080 screenshots, logos & listing copy
-```
-
----
-
-## Development & Building from Source
-
-### Prerequisites (Windows 10/11 x64)
-- [Node.js 20+](https://nodejs.org/)
-- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-- Microsoft Edge WebView2 Runtime *(preinstalled on Windows 11)*
-- Optional for packaging: [NSIS 3](https://nsis.sourceforge.io/) (`winget install NSIS.NSIS`)
-
-### Commands
-
-```powershell
-# 1. Install frontend & test dependencies
-npm install
-
-# 2. Build frontend + native Release binary into dist/myClipClip/
-npm run build:win
-
-# 3. Build and launch immediately
-npm run dev
-
-# 4. Run TypeScript type-check + Vitest + .NET 8 xUnit unit tests
-npm run typecheck
-npm test
-
-# 5. Run Playwright CDP end-to-end tests against the real native myClipClip.exe
-npm run test:e2e
-
-# 6. Build Windows Setup installer (dist/myClipClip-Setup-2.0.0.exe, ~1.26 MB)
-npm run build:installer
-
-# 7. Build Microsoft Store MSIX package (auto-restores makeappx.exe via NuGet)
-npm run build:msix          # Unsigned self-contained MSIX for Partner Center upload
-npm run build:msix:test     # Self-signed MSIX for local sideload testing
-```
-
----
-
-## License
-
-MIT — built by **Kijo Kim**.
