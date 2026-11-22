@@ -40,7 +40,7 @@ myClipClip brings clipboard history, smart text expansion, and multi-provider AI
 
 ## Screenshots
 
-| Clipboard History (`Shift+Win+C`) | Smart Snippets & Placeholders (`Shift+Win+Z`) |
+| Clipboard History (`Shift+Ctrl+C`) | Smart Snippets & Placeholders (`Shift+Ctrl+Z`) |
 | :---: | :---: |
 | ![Clipboard History](store-assets/screenshots/01-clipboard-history-1920x1080.png) | ![Snippets View](store-assets/screenshots/02-snippets-expander-1920x1080.png) |
 
