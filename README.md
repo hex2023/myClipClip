@@ -58,7 +58,7 @@ myClipClip brings clipboard history, smart text expansion, and multi-provider AI
 - **Smart organization**: SHA-256 deduplication, pinning (exempt from retention cleanup), instant multi-token search, and source app tagging.
 - **Instant auto-paste**: Press `Enter` to restore focus to your previous Windows app and paste automatically via Win32 `SendInput`.
 
-### Smart Snippets & Global Auto-Expansion (`Shift+Ctrl+X`)
+### Smart Snippets & Global Auto-Expansion (`Shift+Ctrl+Z`)
 - **Collections & tags**: Organize reusable templates or promote any clipboard history item to a snippet in one click.
 - **Dynamic placeholders**: Resolved automatically when pasted or expanded:
   - `{date}` (`YYYY-MM-DD`), `{time}` (`HH:mm`), `{time_full}` (`HH:mm:ss`), `{datetime}`, `{isodate}`, `{day}`, `{year}`, `{month}`, `{clipboard}`.
@@ -91,7 +91,7 @@ myClipClip brings clipboard history, smart text expansion, and multi-provider AI
 | Shortcut | Action |
 | :--- | :--- |
 | `Ctrl+Shift+C` | Toggle Clipboard History *(configurable in Settings)* |
-| `Ctrl+Shift+S` | Toggle Snippets View *(configurable in Settings)* |
+| `Ctrl+Shift+Z` | Toggle Snippets View *(configurable in Settings)* |
 | `Ctrl+Shift+A` | Open AI Search on current clipboard *(configurable in Settings)* |
 | `Enter` | Auto-paste selected item/snippet into previous app |
 | `Shift+Enter` | Copy selected item/snippet without auto-pasting |
