@@ -90,9 +90,9 @@ myClipClip brings clipboard history, smart text expansion, and multi-provider AI
 
 | Shortcut | Action |
 | :--- | :--- |
-| `Ctrl+Shift+C` | Toggle Clipboard History *(configurable in Settings)* |
-| `Ctrl+Shift+Z` | Toggle Snippets View *(configurable in Settings)* |
-| `Ctrl+Shift+A` | Open AI Search on current clipboard *(configurable in Settings)* |
+| `Shift+Ctrl+C` | Toggle Clipboard History *(configurable in Settings)* |
+| `Shift+Ctrl+Z` | Toggle Snippets View *(configurable in Settings)* |
+| `Shift+Ctrl+A` | Open AI Search on current clipboard *(configurable in Settings)* |
 | `Enter` | Auto-paste selected item/snippet into previous app |
 | `Shift+Enter` | Copy selected item/snippet without auto-pasting |
 | `Tab` | Send selected history item to AI Search |
