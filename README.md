@@ -19,7 +19,12 @@
 
 ## Why myClipClip?
 
-Most modern desktop clipboard utilities bundle an entire Chromium browser (Electron), consuming **300–500 MB of RAM** and **100+ MB on disk** just to sit in your system tray.
+Stop losing time to repetitive typing, buried clipboard history, and constant browser tab-switching.
+
+Knowledge workers, developers, and support teams copy and paste dozens of times an hour—losing focus every time they hunt for a lost snippet, retype boilerplate responses, or switch windows to ask an AI assistant a quick question.
+
+myClipClip brings clipboard history, smart text expansion, and multi-provider AI into one instant keyboard-driven command palette—without slowing down your PC or compromising data privacy.
+
 
 **myClipClip** pairs a native **C# (.NET 8) Win32 host** with Windows' built-in **Edge WebView2 Runtime** and a **60-second idle auto-unload watchdog** — giving you a crisp Alfred-style UI and streaming Markdown AI window at a fraction of the footprint:
 
