@@ -52,20 +52,20 @@ myClipClip brings clipboard history, smart text expansion, and multi-provider AI
 
 ## Features
 
-### Clipboard History (`Shift+Win+C`)
+### Clipboard History (`Shift+Ctrl+C`)
 - **Multi-format capture**: Plain text, screenshots/images (stored cleanly on disk with previews & dimensions), and copied file paths (`CF_HDROP`).
 - **Configurable retention**: Defaults to **10 days** (choose `1d`, `7d`, `10d`, `30d`, `90d`, `Forever`, or custom). Automatic background pruning.
 - **Smart organization**: SHA-256 deduplication, pinning (exempt from retention cleanup), instant multi-token search, and source app tagging.
 - **Instant auto-paste**: Press `Enter` to restore focus to your previous Windows app and paste automatically via Win32 `SendInput`.
 
-### Smart Snippets & Global Auto-Expansion (`Shift+Win+X`)
+### Smart Snippets & Global Auto-Expansion (`Shift+Ctrl+X`)
 - **Collections & tags**: Organize reusable templates or promote any clipboard history item to a snippet in one click.
 - **Dynamic placeholders**: Resolved automatically when pasted or expanded:
   - `{date}` (`YYYY-MM-DD`), `{time}` (`HH:mm`), `{time_full}` (`HH:mm:ss`), `{datetime}`, `{isodate}`, `{day}`, `{year}`, `{month}`, `{clipboard}`.
 - **Global auto-expansion**: Assign optional trigger keywords (e.g., `!standup`, `!sig`) — typing them in any Windows app replaces them in place (toggleable anytime from the system tray).
 - **Backup**: One-click JSON **Import** (merge/replace) and **Export**.
 
-### AI Search — Separate Markdown Result Window (`Tab` or `Shift+Win+A`)
+### AI Search — Separate Markdown Result Window (`Tab` or `Shift+Ctrl+A`)
 - **Analyze copied text or images**: Send any clipboard item (`Tab`) or your current clipboard (`Shift+Win+A`) to an independent, resizable Markdown AI window.
 - **6 Built-in AI Providers (BYOK)** — switch provider and model on the fly:
   | Provider | Protocol | Example Models |
